@@ -45,6 +45,19 @@
     .toggle-menu {
         color: $primary-light;
     }
+
+    .header--actions {
+        text-align: center;
+        background: $gray-ultralight;
+
+        & > *:not(:first-child) {
+            margin-left: 0.5rem;
+        }
+
+        .call {
+            display: inline-block;
+        }
+    }
 }
 
 .overlay--search {
@@ -53,7 +66,7 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(white, 0.9);
+    background: rgba($white, 0.9);
     text-align: center;
     visibility: hidden;
     opacity: 0;

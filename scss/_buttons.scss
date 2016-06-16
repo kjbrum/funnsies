@@ -10,7 +10,6 @@ input[type="button"] {
 	line-height: 1;
     font-size: 1rem;
 	font-weight: normal;
-	margin-bottom: 0.5rem;
 	padding: 1rem 1.5rem;
 	text-align: center;
     font-family: $font;
@@ -61,6 +60,12 @@ input[type="button"] {
 				border-color: $primary-light;
 			}
 		}
+
+		&.btn-3d {
+			&:after {
+			    border-bottom-color: $primary-dark;
+			}
+		}
 	}
 
 	// Secondary color button
@@ -84,6 +89,12 @@ input[type="button"] {
 				border-color: $secondary-light;
 			}
 		}
+
+		&.btn-3d {
+			&:after {
+			    border-bottom-color: $secondary-dark;
+			}
+		}
 	}
 
 	// Small button
@@ -102,6 +113,34 @@ input[type="button"] {
 	&.btn-full {
 		display: block;
 		width: 100%;
+	}
+
+	// 3d button
+	&.btn-3d {
+	    position: relative;
+	    border-bottom-right-radius: 0;
+	    border-bottom-left-radius: 0;
+
+		&:after {
+		    position: absolute;
+		    right: -1px;
+		    left: -1px;
+		    top: 100%;
+		    content: '';
+		    border-bottom: 3px solid $black;
+		    border-bottom-left-radius: 3px;
+		    border-bottom-right-radius: 3px;
+		}
+
+		&:active {
+		    top: 3px;
+		    border-bottom-left-radius: 3px;
+		    border-bottom-right-radius: 3px;
+
+		    &:after {
+			    border-bottom-width: 0 !important;
+		    }
+		}
 	}
 
 	// Disabled button
