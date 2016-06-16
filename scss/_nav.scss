@@ -5,9 +5,55 @@
 .nav--mobile {
     display: none;
 
-    .nav--utility {}
+    a {
+        color: $white;
+    }
 
-    .nav--main {}
+    .nav--utility,
+    .nav--main {
+        margin: 0;
+        list-style: none;
+
+        li {
+            margin: 0;
+        }
+
+        a {
+            display: block;
+            padding: 0.5rem 1rem;
+
+            &.has-child-menu:after {
+                content: '\f0d7';
+                font-family: 'FontAwesome';
+                padding-left: 0.5rem;
+            }
+        }
+    }
+
+    .child-menu {
+        display: none;
+        list-style: none;
+        margin: 0 -1rem;
+        padding: 0 1rem;
+        background: $primary-dark;
+
+        &.open {
+            display: block;
+        }
+    }
+
+    .nav--utility {
+        background: $primary;
+    }
+
+    .nav--main {
+        background: $primary-light;
+
+        .child-menu {
+            background: mix(black, $primary-light, 10%);
+        }
+    }
+
 
     &.open {
         display: block;

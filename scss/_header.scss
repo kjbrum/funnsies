@@ -19,17 +19,17 @@
         vertical-align: middle;
     }
 
-    .header--left {
+    .header--left {}
+
+    .search {
+        color: $primary-dark;
     }
 
     .header--center {
         width: 60%;
         text-align: center;
 
-        a {
-            display: block;
-        }
-
+        a,
         .logo {
             display: block;
         }
@@ -37,5 +37,9 @@
 
     .header--right {
         text-align: right;
+    }
+
+    .toggle-menu {
+        color: $primary-light;
     }
 }
