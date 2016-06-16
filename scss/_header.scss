@@ -1,4 +1,5 @@
 // Header
+
 .header {}
 
 .header--mobile {
@@ -19,8 +20,6 @@
         vertical-align: middle;
     }
 
-    .header--left {}
-
     .search {
         color: $primary-dark;
     }
@@ -33,6 +32,10 @@
         .logo {
             display: block;
         }
+
+        .logo {
+            margin: 0 auto;
+        }
     }
 
     .header--right {
@@ -41,5 +44,67 @@
 
     .toggle-menu {
         color: $primary-light;
+    }
+}
+
+.overlay--search {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(white, 0.9);
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+
+    &.open {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .centerer {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        transform: translateY(-50%);
+
+        p {
+            margin-bottom: 2rem;
+
+            @media (min-width: $bp-s) {
+                font-size: 2rem;
+            }
+
+            a {
+                color: $black;
+                margin-left: 1rem;
+            }
+        }
+    }
+
+    .search-form {
+        .fa {
+            font-size: 1rem;
+
+            @media (min-width: $bp-s) {
+                font-size: 1.5rem;
+            }
+        }
+
+        input {
+            display: inline-block;
+            width: 80%;
+            margin-left: 0.5rem;
+            border: solid #333;
+            border-width: 0 0 1px;
+            border-radius: 0;
+
+            @media (min-width: $bp-s) {
+                width: 50%;
+                margin-left: 1rem;
+            }
+        }
     }
 }

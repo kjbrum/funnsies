@@ -11,6 +11,11 @@
         }
     });
 
+    // Handle search overlay
+    $('.js-toggle-search').click(function() {
+        $('.overlay--search').toggleClass('open');
+    });
+
     // Handle child menu toggling
     $('.has-child-menu').click(function(e) {
         e.preventDefault();
