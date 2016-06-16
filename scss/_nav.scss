@@ -1,1 +1,15 @@
 // Nav
+
+.nav {}
+
+.nav--mobile {
+    display: none;
+
+    .nav--utility {}
+
+    .nav--main {}
+
+    &.open {
+        display: block;
+    }
+}
