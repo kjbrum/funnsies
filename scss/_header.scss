@@ -1,0 +1,41 @@
+// Header
+.header {}
+
+.header--mobile {
+
+    .container:first-of-type {
+        display: table;
+    }
+
+    .header--left,
+    .header--right {
+        width: 20%;
+    }
+
+    .header--left,
+    .header--center,
+    .header--right {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .header--left {
+    }
+
+    .header--center {
+        width: 60%;
+        text-align: center;
+
+        a {
+            display: block;
+        }
+
+        .logo {
+            display: block;
+        }
+    }
+
+    .header--right {
+        text-align: right;
+    }
+}

@@ -1,13 +1,13 @@
 // Variables
 
 // Colors
-$primary: #A07B83;
-$secondary: #FF8B86;
+$primary: #0E293F;
+$secondary: #BF9150;
 $colors: (
     primary: (
-        light: mix(white, $primary, 20%),
+        light: #7C99B7,
         normal: $primary,
-        dark: mix(black, $primary, 20%)
+        dark: #0D2438
     ),
     secondary: (
         light: mix(white, $secondary, 20%),
