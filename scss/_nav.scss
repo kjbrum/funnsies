@@ -2,12 +2,11 @@
 
 .nav {}
 
-.nav--main {
+.nav--desktop {
     .nav--utility {
         display: table;
         width: 100%;
         margin: 0;
-        // padding: 0 6rem;
         text-align: center;
 
         li {
@@ -26,9 +25,6 @@
 
     .nav--utility,
     .nav--main {
-        margin: 0;
-        list-style: none;
-
         li {
             margin: 0;
         }
