@@ -1,5 +1,19 @@
 // Main
 
+.section--background {
+    position: relative;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0,0,0,0.75);
+    }
+}
+
 .section--hero {
     position: relative;
     background: url(https://placeholdit.imgix.net/~text?txtsize=75&txt=800%C3%97475&w=800&h=475) no-repeat center center;
