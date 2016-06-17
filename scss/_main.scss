@@ -2,11 +2,11 @@
 
 .section--hero {
     position: relative;
-    background: url(http://placeholder.pics/svg/800x475/30343C/82BCB9-30343C) no-repeat center center;
+    background: url(https://placeholdit.imgix.net/~text?txtsize=75&txt=800%C3%97475&w=800&h=475) no-repeat center center;
     background-size: cover;
 
     @media (min-width: $bp-m) {
-        background: url(http://placeholder.pics/svg/2000x725/30343C/82BCB9-30343C) no-repeat center center;
+        background: url(https://placeholdit.imgix.net/~text?txtsize=75&txt=2000%C3%97725&w=2000&h=725) no-repeat center center;
     }
 
     .container {
@@ -63,11 +63,11 @@
 .section--quote {
     padding: 5rem 0;
     color: $white;
-    background: url(http://placeholder.pics/svg/800x475/30343C/82BCB9-30343C) no-repeat center center;
+    background: url(https://placeholdit.imgix.net/~text?txtsize=75&txt=800%C3%97475&w=800&h=475) no-repeat center center;
     background-size: cover;
 
     @media (min-width: $bp-m) {
-        background: url(http://placeholder.pics/svg/2000x725/30343C/82BCB9-30343C) no-repeat center center;
+        background: url(https://placeholdit.imgix.net/~text?txtsize=75&txt=2000%C3%97725&w=2000&h=725) no-repeat center center;
         font-size: 1.5rem;
         blockquote {
             text-align: right;
