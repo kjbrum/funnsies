@@ -38,7 +38,6 @@
         position: absolute;
         top: 100%;
         left: 0;
-        display: none;
         margin: 0;
         padding: 0;
         min-width: 100%;
@@ -46,6 +45,10 @@
         list-style: none;
         background: $white;
         z-index: 99;
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(10px);
+        transition: 0.3s ease-in-out;
 
         li {
             margin: 0;
@@ -64,7 +67,9 @@
         }
 
         &.open {
-            display: block;
+            visibility: visible;
+            opacity: 1;
+            transform: translateY(0);
         }
     }
 

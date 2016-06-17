@@ -1,6 +1,7 @@
 (function($) {
     // Handle nav menu toggling
-    $('.js-toggle-menu').click(function() {
+    $('.js-toggle-menu').click(function(e) {
+        e.preventDefault();
         $('.nav--mobile').toggleClass('open');
 
         // Change the button text
@@ -12,7 +13,8 @@
     });
 
     // Handle search overlay
-    $('.js-toggle-search').click(function() {
+    $('.js-toggle-search').click(function(e) {
+        e.preventDefault();
         $('.overlay--search').toggleClass('open');
     });
 
