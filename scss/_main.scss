@@ -16,11 +16,13 @@
 
 .section--hero {
     position: relative;
-    background: url(https://placeholdit.imgix.net/~text?txtsize=75&txt=800%C3%97475&w=800&h=475) no-repeat center center;
+    background-image: url(https://placeholdit.imgix.net/~text?txtsize=75&txt=800%C3%97475&w=800&h=475);
+    background-repeat: no-repeat;
+    background-position: center center;
     background-size: cover;
 
     @media (min-width: $bp-m) {
-        background: url(https://placeholdit.imgix.net/~text?txtsize=75&txt=2000%C3%97725&w=2000&h=725) no-repeat center center;
+        background-image: url(https://placeholdit.imgix.net/~text?txtsize=75&txt=2000%C3%97725&w=2000&h=725);
     }
 
     .container {
@@ -77,12 +79,15 @@
 .section--quote {
     padding: 5rem 0;
     color: $white;
-    background: url(https://placeholdit.imgix.net/~text?txtsize=75&txt=800%C3%97475&w=800&h=475) no-repeat center center;
+    background-image: url(https://placeholdit.imgix.net/~text?txtsize=75&txt=800%C3%97475&w=800&h=475);
+    background-repeat: no-repeat;
+    background-position: center center;
     background-size: cover;
 
     @media (min-width: $bp-m) {
-        background: url(https://placeholdit.imgix.net/~text?txtsize=75&txt=2000%C3%97725&w=2000&h=725) no-repeat center center;
+        background-image: url(https://placeholdit.imgix.net/~text?txtsize=75&txt=2000%C3%97725&w=2000&h=725);
         font-size: 1.5rem;
+
         blockquote {
             text-align: right;
         }
