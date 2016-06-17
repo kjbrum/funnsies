@@ -2,6 +2,21 @@
 
 .nav {}
 
+.nav--main {
+    .nav--utility {
+        display: table;
+        width: 100%;
+        margin: 0;
+        // padding: 0 6rem;
+        text-align: center;
+
+        li {
+            display: table-cell;
+            vertical-align: middle;
+        }
+    }
+}
+
 .nav--mobile {
     display: none;
 

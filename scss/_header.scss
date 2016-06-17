@@ -1,8 +1,40 @@
 // Header
 
-.header {}
+.header--main {
+    display: none;
+
+    @media (min-width: $bp-m) {
+        display: block;
+    }
+
+    .container:first-of-type {
+        display: table;
+    }
+
+    .header--left,
+    .header--right {
+        width: 15%;
+    }
+
+    .header--left,
+    .header--center,
+    .header--right {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .header--right {
+        text-align: right;
+    }
+}
 
 .header--mobile {
+    display: block;
+
+    @media (min-width: $bp-m) {
+        display: none;
+    }
+
     .container:first-of-type {
         display: table;
     }
