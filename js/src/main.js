@@ -15,7 +15,7 @@
     // Handle search overlay
     $('.js-toggle-search').click(function(e) {
         e.preventDefault();
-        $('.overlay--search').toggleClass('open');
+        $('.overlay--search, html, body').toggleClass('open');
     });
 
     // Handle child menu toggling

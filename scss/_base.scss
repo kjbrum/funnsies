@@ -16,6 +16,12 @@
     background: $primary;
 }
 
+html.open,
+body.open {
+    overflow: auto;
+    height: 100%;
+}
+
 body {
 	font: 100%/1.5 $font;
 	-webkit-text-size-adjust: 100%;
