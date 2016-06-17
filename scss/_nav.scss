@@ -81,7 +81,10 @@
         }
     }
 
-    .nav--utility {
+    .nav--main {
+        a:not(.btn) {
+            color: $black;
+        }
     }
 }
 
