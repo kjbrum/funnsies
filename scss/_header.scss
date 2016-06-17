@@ -3,7 +3,6 @@
 .header {}
 
 .header--mobile {
-
     .container:first-of-type {
         display: table;
     }
@@ -71,6 +70,7 @@
     visibility: hidden;
     opacity: 0;
     transition: 0.3s ease-in-out;
+    z-index: 99;
 
     &.open {
         visibility: visible;

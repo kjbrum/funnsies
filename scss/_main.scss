@@ -1,17 +1,59 @@
 // Main
 
 .section--hero {
-    padding: 5rem 0;
+    position: relative;
+    padding: 7rem 0;
+    background: url(http://placeholder.pics/svg/800x475/30343C/82BCB9-30343C) no-repeat center center;
+    background-size: cover;
+
+    .centerer {
+        text-align: center;
+        h1 {
+            color: $white;
+            font-size: 2rem;
+        }
+    }
+
+    .caption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 1rem;
+        color: $white;
+        font-size: 0.8rem;
+    }
+
+    .contact-box {
+        display: none;
+    }
 }
 
 .section--content {
+    padding: 4rem 0;
 
+    .lead {
+        font-size: 1.5rem;
+    }
 }
 
 .section--quote {
+    padding: 5rem 0;
+    color: $white;
+    background: url(http://placeholder.pics/svg/800x475/30343C/82BCB9-30343C) no-repeat center center;
 
+    blockquote {
+        margin: 0;
+        padding: 0;
+        border: none;
+    }
+
+    .credit {
+        margin-top: 1rem;
+    }
 }
 
 .section--pre-footer {
     background: $primary-darker;
+    text-align: center;
+    padding-bottom: 1rem;
 }
