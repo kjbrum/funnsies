@@ -1,18 +1,74 @@
 // Nav
 
-.nav {}
+.nav {
+    .nav--utility,
+    .nav--main {
+        .has-child-menu {
+            position: relative;
+
+            > a:after {
+                content: '\f0d7';
+                font-family: 'FontAwesome';
+                font-size: 0.8rem;
+                padding-left: 0.5rem;
+            }
+        }
+    }
+}
 
 .nav--desktop {
-    .nav--utility {
+    .nav--utility,
+    .nav--main {
         display: table;
         width: 100%;
         margin: 0;
         text-align: center;
 
-        li {
+        > li {
             display: table-cell;
             vertical-align: middle;
         }
+
+        .has-child-menu {
+            position: relative;
+        }
+    }
+
+    .child-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        display: none;
+        margin: 0;
+        padding: 0;
+        min-width: 100%;
+        text-align: left;
+        list-style: none;
+        background: $white;
+        z-index: 99;
+
+        li {
+            margin: 0;
+            white-space: nowrap;
+        }
+
+        a {
+            display: block;
+            padding: 0.5rem 1rem;
+            color: $primary-dark;
+            transition: 0.3s ease-in-out;
+
+            &:hover {
+                background: $gray-ultralight;
+            }
+        }
+
+        &.open {
+            display: block;
+        }
+    }
+
+    .nav--utility {
     }
 }
 
@@ -32,12 +88,6 @@
         a {
             display: block;
             padding: 0.5rem 1rem;
-
-            &.has-child-menu:after {
-                content: '\f0d7';
-                font-family: 'FontAwesome';
-                padding-left: 0.5rem;
-            }
         }
     }
 

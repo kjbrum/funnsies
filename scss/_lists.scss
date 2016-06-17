@@ -57,7 +57,7 @@ dl {
 .list-inline {
     list-style: none;
 
-    li {
+    > li {
         display: inline-block;
         margin-bottom: 0;
         padding: 0.5rem;

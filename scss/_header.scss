@@ -12,6 +12,13 @@
         vertical-align: middle;
     }
 
+    .header--center {
+        .logo {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
     .header--right {
         text-align: right;
     }
@@ -36,6 +43,15 @@
     .header--right {
         a {
             color: $black;
+        }
+    }
+
+    &.header--secondary {
+        border-top: 1px solid $gray-ultralight;
+
+        .container {
+            padding-top: 0;
+            padding-bottom: 0;
         }
     }
 }

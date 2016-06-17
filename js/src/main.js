@@ -17,7 +17,7 @@
     });
 
     // Handle child menu toggling
-    $('.has-child-menu').click(function(e) {
+    $('.has-child-menu a').click(function(e) {
         e.preventDefault();
 
         if ($(this).next('.child-menu').hasClass('open')) {
