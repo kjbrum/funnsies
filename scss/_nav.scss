@@ -31,6 +31,14 @@
 
         .has-child-menu {
             position: relative;
+
+            &.open {
+                background: #7c99b7;
+
+                a {
+                    color: white;
+                }
+            }
         }
     }
 
@@ -43,7 +51,7 @@
         min-width: 100%;
         text-align: left;
         list-style: none;
-        background: $white;
+        background: $primary;
         z-index: 99;
         visibility: hidden;
         opacity: 0;
@@ -62,7 +70,7 @@
             transition: 0.3s ease-in-out;
 
             &:hover {
-                background: $gray-ultralight;
+                background: $primary-light;
             }
         }
 

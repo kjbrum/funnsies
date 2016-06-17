@@ -23,12 +23,14 @@
         e.preventDefault();
 
         if ($(this).next('.child-menu').hasClass('open')) {
+            $(this).closest('.has-child-menu').removeClass('open');
             $(this).next('.child-menu').removeClass('open');
         } else {
             // Hide all child menus
-            $('.child-menu').removeClass('open');
+            $('.child-menu, .has-child-menu').removeClass('open');
 
             // Show the new child menu
+            $(this).closest('.has-child-menu').toggleClass('open');
             $(this).next('.child-menu').toggleClass('open');
         }
     });
